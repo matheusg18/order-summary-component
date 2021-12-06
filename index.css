@@ -42,6 +42,13 @@ body {
 .btn-primary {
   background-color: #3829e0;
   color: #f5f7ff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+.btn-primary:hover {
+  background-color: #4536e2;
+}
+.btn-primary:active {
+  background-color: #6255e7;
 }
 
 .btn-secondary {
@@ -50,15 +57,11 @@ body {
   margin-top: 8px;
   margin-bottom: 16px;
 }
-
-.attribution {
-  text-align: center;
-  padding: 8px;
-  width: 100%;
+.btn-secondary:hover {
+  color: #293d70;
 }
-.attribution a {
-  color: #1b5299;
-  text-decoration: none;
+.btn-secondary:active {
+  color: #1f2f56;
 }
 
 body {
@@ -71,9 +74,11 @@ body {
 .container {
   overflow: hidden;
   width: 86%;
+  max-width: 447.2px;
   margin: 80px auto;
   background-color: #f5f7ff;
   border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
 .container img {
   max-width: 100%;
@@ -111,6 +116,14 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
+.plan-wrapper > span:last-child:hover {
+  color: #4536e2;
+  text-decoration: none;
+}
+.plan-wrapper > span:last-child:active {
+  color: #6255e7;
+  text-decoration: none;
+}
 
 .plan {
   font-size: 15px;
@@ -124,4 +137,24 @@ body {
 }
 .plan span:last-child {
   color: #7280a7;
+}
+
+@media screen and (min-width: 520px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: 100% 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .sub-container {
+    width: 76%;
+  }
 }/*# sourceMappingURL=index.css.map */

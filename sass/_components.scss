@@ -19,6 +19,15 @@
   @extend %reset-btn, %rounded-border;
   background-color: map-get($primary-color, 'bright');
   color: map-get($neutral-color, 'very-pale');
+  box-shadow: 0 10px 15px rgba($color: #000000, $alpha: 0.15);
+
+  &:hover {
+    background-color: lighten(map-get($primary-color, 'bright'), $amount: 3%);
+  }
+
+  &:active {
+    background-color: lighten(map-get($primary-color, 'bright'), $amount: 10%);
+  }
 }
 
 .btn-secondary {
@@ -27,15 +36,12 @@
   color: map-get($neutral-color, 'desaturated');
   margin-top: space(1);
   margin-bottom: space(2);
-}
 
-.attribution {
-  text-align: center;
-  padding: space(1);
-  width: 100%;
+  &:hover {
+    color: lighten(map-get($neutral-color, 'dark'), $amount: 7%);
+  }
 
-  a {
-    color: #1b5299;
-    text-decoration: none;
+  &:active {
+    color: map-get($neutral-color, 'dark');
   }
 }
