@@ -66,7 +66,7 @@ body {
 
 body {
   background-color: #e0e8ff;
-  background-image: url(../images/pattern-background-mobile.svg);
+  background-image: url(/images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -141,7 +141,7 @@ body {
 
 @media screen and (min-width: 520px) {
   body {
-    background-image: url(../images/pattern-background-mobile.svg);
+    background-image: url(/images/pattern-background-mobile.svg);
     background-size: 100% 50%;
     display: flex;
     flex-direction: column;

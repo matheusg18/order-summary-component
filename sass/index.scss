@@ -6,7 +6,7 @@
 body {
   background: {
     color: map-get($primary-color, 'pale');
-    image: url(../images/pattern-background-mobile.svg);
+    image: url(/images/pattern-background-mobile.svg);
     repeat: no-repeat;
     position: top;
   }
@@ -92,7 +92,7 @@ body {
 @media screen and (min-width: $mobile) {
   body {
     background: {
-      image: url(../images/pattern-background-mobile.svg);
+      image: url(/images/pattern-background-mobile.svg);
       size: 100% 50%;
     }
     display: flex;
