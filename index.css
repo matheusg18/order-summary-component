@@ -1,0 +1,127 @@
+.sub-container, .plan {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.plan-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.plan-wrapper, .btn-primary {
+  border-radius: 10px;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.btn-secondary, .btn-primary {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #3829e0;
+  color: #f5f7ff;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #7280a7;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.attribution {
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+}
+.attribution a {
+  color: #1b5299;
+  text-decoration: none;
+}
+
+body {
+  background-color: #e0e8ff;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.container {
+  overflow: hidden;
+  width: 86%;
+  margin: 80px auto;
+  background-color: #f5f7ff;
+  border-radius: 20px;
+}
+.container img {
+  max-width: 100%;
+}
+
+.sub-container {
+  align-items: center;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.main-header {
+  color: #1f2f56;
+  font-weight: 900;
+  margin: 32px 0 24px;
+}
+
+.main-paragraph {
+  text-align: center;
+  color: #7280a7;
+}
+
+.plan-wrapper {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebf0ff;
+  padding: 16px;
+  width: 100%;
+  margin: 40px 0 32px;
+}
+.plan-wrapper > span:last-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3829e0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.plan {
+  font-size: 15px;
+  flex-grow: 1;
+  margin-left: 16px;
+}
+.plan span:first-child {
+  color: #1f2f56;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+.plan span:last-child {
+  color: #7280a7;
+}/*# sourceMappingURL=index.css.map */

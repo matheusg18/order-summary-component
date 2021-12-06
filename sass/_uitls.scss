@@ -1,0 +1,19 @@
+@function space($factor) {
+  $base-space: 8px;
+
+  @return $factor * $base-space;
+}
+
+%flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+%flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+%rounded-border {
+  border-radius: 10px;
+}

@@ -1,0 +1,78 @@
+@use 'variables' as *;
+@use 'uitls' as *;
+@use 'reset';
+@use 'components';
+
+body {
+  background: {
+    color: map-get($primary-color, 'pale');
+    image: url(../images/pattern-background-mobile.svg);
+    repeat: no-repeat;
+    position: top;
+  }
+}
+
+.container {
+  overflow: hidden;
+  width: 86%;
+  margin: space(10) auto;
+  background-color: map-get($neutral-color, 'very-pale');
+  border-radius: 20px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.sub-container {
+  @extend %flex-column;
+  align-items: center;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.main-header {
+  color: map-get($neutral-color, 'dark');
+  font-weight: 900;
+  margin: space(4) 0 space(3);
+}
+
+.main-paragraph {
+  text-align: center;
+  color: map-get($neutral-color, 'desaturated');
+}
+
+.plan-wrapper {
+  @extend %flex-row, %rounded-border;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darken(map-get($neutral-color, 'very-pale'), 2%);
+  padding: space(2);
+  width: 100%;
+  margin: space(5) 0 space(4);
+
+  & > span:last-child {
+    font-size: 14px;
+    font-weight: 700;
+    color: map-get($primary-color, 'bright');
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.plan {
+  @extend %flex-column;
+  font-size: 15px;
+  flex-grow: 1;
+  margin-left: space(2);
+
+  span:first-child {
+    color: map-get($neutral-color, 'dark');
+    font-weight: 900;
+    margin-bottom: space(0.5);
+  }
+
+  span:last-child {
+    color: map-get($neutral-color, 'desaturated');
+  }
+}

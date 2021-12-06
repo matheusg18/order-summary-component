@@ -1,0 +1,41 @@
+@use 'uitls' as *;
+@use 'variables' as *;
+
+%reset-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: {
+    family: inherit;
+    size: 1.1rem;
+    weight: 700;
+  }
+  padding: space(2);
+  text-align: center;
+  width: 100%;
+}
+
+.btn-primary {
+  @extend %reset-btn, %rounded-border;
+  background-color: map-get($primary-color, 'bright');
+  color: map-get($neutral-color, 'very-pale');
+}
+
+.btn-secondary {
+  @extend %reset-btn;
+  background-color: transparent;
+  color: map-get($neutral-color, 'desaturated');
+  margin-top: space(1);
+  margin-bottom: space(2);
+}
+
+.attribution {
+  text-align: center;
+  padding: space(1);
+  width: 100%;
+
+  a {
+    color: #1b5299;
+    text-decoration: none;
+  }
+}

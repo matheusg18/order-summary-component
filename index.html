@@ -11,27 +11,29 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <section class="container">
-      <h1>Order Summary</h1>
-
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you
-        like!
-      </p>
-
-      <div class="plan-wrapper">
-        <img src="./images/icon-music.svg" alt="music icon" />
-        <div class="plan">Annual Plan $59.99/year</div>
-
-        Change
+      <img src="./images/illustration-hero.svg" alt="person listening to music" />
+      <div class="sub-container">
+        <h1 class="main-header">Order Summary</h1>
+        <p class="main-paragraph">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere
+          you like!
+        </p>
+        <div class="plan-wrapper">
+          <img src="./images/icon-music.svg" alt="music icon" />
+          <div class="plan">
+            <span>Annual Plan</span>
+            <span>$59.99/year</span>
+          </div>
+          <span role="button">Change</span>
+        </div>
+        <button type="button" class="btn-primary">Proceed to Payment</button>
+        <button type="button" class="btn-secondary">Cancel Order</button>
       </div>
-
-      <button type="button">Proceed to Payment</button>
-      <button type="button">Cancel Order</button>
     </section>
-
     <footer class="attribution">
       <p>
         Challenge by
