@@ -33,15 +33,11 @@ Os usuários devem ser capazes de:
 
 ![1024x768](./resources/1024x768.png)
 
-#### Layout em 1440x900
-
-![1440x900](./resources/1440x900.png)
-
 ### Gifs
 
-#### Efeito de hover
+#### Efeitos de _hover_ e _active_
 
-![hover no botão](./resources/button-hover.gif)
+![hover no botão](./resources/button-interations.gif)
 
 ## Desenvolvimento
 
