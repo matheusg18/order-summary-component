@@ -1,4 +1,4 @@
-# Frontend Mentor - Single price grid component solution
+# Frontend Mentor - Order summary component solution
 
 Esta é a minha solução do desafio "[Order summary component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)". O desafio consiste em criar um card com interatividade nos botões.
 
